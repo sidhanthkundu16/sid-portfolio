@@ -1,0 +1,45 @@
+.text-animate {
+  display: inline;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+  line-height: 0px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: #ffd700;
+  }
+}
+
+
+
+@for $i from 1 through 35 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+// @media (max-width:400px) {
+//   .text-animate{
+//     font-size: 30px;
+
+//   }
+  
+// }
+
+// @media (max-width:500px) {
+//   .text-animate{
+//     font-size: 42px;
+
+//   }
+  
+// }

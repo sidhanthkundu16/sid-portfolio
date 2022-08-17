@@ -1,0 +1,146 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-height: 80%;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 56px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    display: inline;
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: -15px;
+      opacity: 0.6;
+    }
+
+    &:after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
+
+    img {
+      margin-left: 20px;
+      opacity: 0;
+      width: 32px;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
+    }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
+}
+.logo-container {
+  .solid-logo {
+    width: 400px;
+    height: 609px;
+    position: absolute;
+    z-index: 1;
+    transform: rotateZ(30deg) !important;
+    left: 0;
+    margin: auto;
+    right: -40%;
+    animation: fadeInAnimation 1s 1.8s backwards;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-page, .work-page
+  .text-page {
+    .text-zone {
+      width: 80%;
+      min-height: 0;
+      opacity: 1;
+    }
+    h1 {
+      font-size: 54px !important;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .home-page {
+    h1:before {
+      left: -13px;
+    }
+  }
+  .logo-container {
+    .solid-logo {
+      width: 263px;
+      height: 400px;
+      top: 25%;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 47px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media (max-width: 443px) {
+  h1:after {
+    margin-left: 2px;
+  }
+}
+@media (max-width:765px) {
+  .logo-container{
+    .solid-logo{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// .icon {
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+//   top: 0;
+//   bottom: 0;
+//   width: 200px;
+//   height: 200px;
+//   animation: rotation 3s infinite linear;
+//   animation-fill-mode: forwards;
+//   color: #ffd700;
+// }
+// @keyframes rotation {
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+.coming-soon{
+
+    font-size: 30px;
+    color: #7FDBFF
+;
+    animation: 3s infinite linear;
+}
+
+// @media (max-width: 960px) {
+  
+    
+  
+//   .icon {
+//     margin-top: 60%;
+//   }
+// }
+
+
+@media (max-width: 500px){
+    .coming-soon{
+        margin-top: 120px;
+    }
+}
