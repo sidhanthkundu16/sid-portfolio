@@ -66,7 +66,8 @@ const Skills = () => {
             </a>{' '}
             profile for more details. Also you can checkout my cv on this{' '}
             <a
-              href="https://www.linkedin.com/in/sidhanthkundu"
+              href="https://drive.google.com/file/d/1jvPpU0t65HHOKiIBLQ2H2zFsLFDtsga4/view?usp=sharing"
+              target="_blank"
               className="link"
             >
               link
