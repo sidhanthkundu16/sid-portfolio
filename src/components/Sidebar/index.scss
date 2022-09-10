@@ -193,13 +193,13 @@
       padding: 0;
       list-style: none;
       text-align: center;
-      margin: 0;
+      margin: 16px;
       float: right;
       li {
         float: right;
         height: 60px;
         line-height: 60px;
-        margin: 0 10px;
+        margin: 0 8px;
         a {
           line-height: 60px;
           padding: 0;
@@ -241,7 +241,7 @@
 
       a{
         height: 29px;
-        margin-left: 62px;
+        margin-left: 12%;
       }
     }
   }
@@ -262,7 +262,7 @@
   .nav-bar{
     .mobile-nav{
       a{
-        margin-left: 48px;
+        // margin-left: 48px; 
       }
     }
   }
@@ -274,7 +274,7 @@
   .nav-bar{
     .mobile-nav{
       a{
-        margin-left: 40px;
+        margin-left: 11.5%;
       }
     }
   }

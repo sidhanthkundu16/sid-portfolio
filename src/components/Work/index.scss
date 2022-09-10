@@ -1,43 +1,257 @@
-// .icon {
-//   display: block;
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   top: 0;
-//   bottom: 0;
-//   width: 200px;
-//   height: 200px;
-//   animation: rotation 3s infinite linear;
-//   animation-fill-mode: forwards;
-//   color: #ffd700;
-// }
-// @keyframes rotation {
-//   100% {
-//     transform: rotate(360deg);
-//   }
-// }
+.work-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 21%;
+    transform: translateY(-50%);
+    width: 45%;
+    vertical-align: middle;
+    display: table-cell;
 
-.coming-soon{
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      color: #ffd700;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: -10px;
+      line-height: 50px;
 
-    font-size: 30px;
-    color: #7FDBFF
-;
-    animation: 3s infinite linear;
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        margin-top: -20px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+
+      &::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+    .para {
+      font-size: 40px;
+      color: white;
+    }
+  }
 }
 
-// @media (max-width: 960px) {
-  
-    
-  
-//   .icon {
-//     margin-top: 60%;
-//   }
-// }
+.text-animate-hover {
+  &:hover {
+    color: #fff;
+  }
+}
 
+.coming-soon {
+  font-size: 30px;
+  color: #7fdbff;
+  animation: 3s infinite linear;
+}
 
-@media (max-width: 500px){
-    .coming-soon{
-        margin-top: 120px;
+.card {
+  width: 51rem;
+  position: relative;
+  display: inline-block;
+  top: 30%;
+  margin-top: 227px;
+  left: 11%;
+  .imge {
+    width: 51rem;
+    height: 31rem;
+  }
+  .iconn {
+    position: absolute;
+    left: 45%;
+    top: 44%;
+    display: none;
+  }
+}
+
+.card:hover {
+  .imge {
+    filter: blur(1.5px);
+    animation-delay: 2s;
+    animation: backwards;
+    transition: 2s;
+    transition-property: initial;
+  }
+  .iconn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: black;
+    animation-delay: 2s;
+    animation: backwards;
+    transition: 2s;
+    transition-property: initial;
+  }
+}
+
+.card2 {
+  width: 51rem;
+  height: 31rem;
+  position: relative;
+  display: inline-block;
+  top: 30%;
+  left: 41%;
+  margin-left: -30%;
+  .imge {
+    width: 51rem;
+    height: 31rem;
+  }
+  .iconn {
+    position: absolute;
+    left: 45%;
+    top: 44%;
+    display: none;
+  }
+}
+
+.card2:hover {
+  .imge {
+    filter: blur(1.5px);
+    animation-delay: 2s;
+    animation: backwards;
+    transition: 2s;
+    transition-property: initial;
+  }
+  .iconn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: black;
+  }
+}
+@media (max-width: 500px) {
+  .coming-soon {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 960px) {
+  .card {
+    display: block;
+  }
+}
+@media (max-width: 604px) {
+  .card{
+    .imge{
+      width: 42rem;
+      height: 24rem;
+
     }
+    .iconn{
+      left: 37%;
+      top: 45%;
+
+    }
+  }
+  .card2{
+    .imge{
+      width: 42rem;
+      height: 24rem;
+
+    }
+    .iconn{
+      left: 37%;
+      top: 30%;
+
+    }
+  }
+  
+}
+
+@media (max-width: 505px) {
+  .card{
+    .imge{
+      width: 37rem;
+      height: 20rem;
+
+    }
+    .iconn{
+      left: 31%;
+      top: 45%;
+
+    }
+  }
+  .card2{
+    .imge{
+      width: 37rem;
+      height: 20rem;
+
+    }
+    .iconn{
+      left: 31%;
+      top: 23%;
+
+    }
+  }
+  
+}
+
+@media (max-width: 444px) {
+  .card{
+    .imge{
+      width: 34rem;
+      height: 19rem;
+
+    }
+    .iconn{
+      left: 29%;
+      top: 45%;
+
+    }
+  }
+  .card2{
+    .imge{
+      width: 34rem;
+      height: 19rem;
+
+    }
+    .iconn{
+      left: 27%;
+      top: 23%;
+
+    }
+  }
+  
+}
+
+@media (max-width: 402px) {
+  .card{
+    .imge{
+      width: 32rem;
+      height: 17rem;
+
+    }
+    .iconn{
+      left: 26%;
+      top: 45%;
+
+    }
+  }
+  .card2{
+    .imge{
+      width: 32rem;
+      height: 17rem;
+
+    }
+    .iconn{
+      left: 26%;
+      top: 21%;
+    }
+  } 
 }
