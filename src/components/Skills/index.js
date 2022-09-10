@@ -38,7 +38,7 @@ const Skills = () => {
             />
           </h1>
           <p>
-            Expert in front-end development including technogies like{' '}
+            Work in front-end development including technogies like{' '}
             <span className="highlight">HTML5</span>,{' '}
             <span className="highlight">CSS3</span>,{' '}
             <span className="highlight">JavaScript</span>,{' '}
