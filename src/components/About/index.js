@@ -17,7 +17,7 @@ const About = () => {
 
   
 
-
+console.log("kuch bhi");
   return (
     <>
       <div className="container about-page">
